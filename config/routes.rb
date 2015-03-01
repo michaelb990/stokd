@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'users/new'
+
   # Set the homepage
   get 'welcome/index'
   root 'welcome#index'
