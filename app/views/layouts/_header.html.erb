@@ -53,7 +53,7 @@
       </form> -->
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
-          <li><p class="navbar-text">Logged in as <%= link_to current_user %></p></li>
+          <li><p class="navbar-text">Logged in as <%= link_to current_user.name, current_user %></p></li>
           <li><%= link_to 'Sign out', logout_path, method: :delete %></li>
         <% else %>
           <li><%= link_to 'Log in', login_path %></li>
