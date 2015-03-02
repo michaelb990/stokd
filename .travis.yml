@@ -12,4 +12,4 @@ before_script:
   - psql -c 'create database stokd_test' -U postgres
 
 script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate test:all
+  - RAILS_ENV=test bundle exec rake db:migrate test
