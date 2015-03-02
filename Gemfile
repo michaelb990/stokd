@@ -32,6 +32,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Heroku uses postgres
+gem 'pg'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   # Heroku uses postgres, don't need sqlite3
@@ -47,7 +50,3 @@ group :development, :test do
   gem 'spring'
 end
 
-group :production do
-  # Heroku uses postgres
-  gem 'pg'
-end
