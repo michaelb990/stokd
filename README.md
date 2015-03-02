@@ -3,7 +3,7 @@ stokd
 A side-project intended to learn about ruby on rails & web apps in general.
 Potentially, a helpful tool in organizing adventures.
 
-[![Build Status](https://travis-ci.org/box/ClusterRunner.svg?branch=master)](https://travis-ci.org/box/ClusterRunner)
+[![Build Status](https://travis-ci.org/michaelb990/stokd.svg?branch=master)](https://travis-ci.org/michaelb990/stokd)
 
 ### Installation
 On a mac, I was able to get the app up and running with the following:
