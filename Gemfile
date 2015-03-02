@@ -47,3 +47,7 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+  # Heroku uses postgres
+  gem 'pg'
+end
