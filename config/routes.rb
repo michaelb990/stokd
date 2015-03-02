@@ -1,16 +1,20 @@
 Rails.application.routes.draw do
-  
+
   # Set the homepage
   # get 'welcome/index'
-  root             'welcome#index'
+  root               'welcome#index'
 
   # Add an event resource, the basis for the stokd app
-  resources        :events
+  resources          :events
 
   # Add users to the route table
-  resources        :users
-  get 'signup'  => 'users#new'
-  
+  resources          :users
+  get 'signup'    => 'users#new'
+
+  get 'login'     => 'sessions#new'
+  post 'login'    => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
